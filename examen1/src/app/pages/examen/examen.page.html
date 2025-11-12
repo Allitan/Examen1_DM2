@@ -4,10 +4,21 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">examen</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding ion-text-center">
+
+  <h2>Transaction Status</h2>
+
+  <ion-chip
+    [ngClass]="statusClasses()"
+    color="light"
+    class="status-chip ion-padding"
+  >
+
+    <ion-label>{{ statusText()}} </ion-label>
+</ion-chip>
+
+<p class="ion-padding-top">
+  Sent: <strong>{{ sent() ? 'true' : 'false'}}</strong>
+  Approved: <strong>{{ approved() ? 'true' : 'false'}}</strong>
+</p>
 </ion-content>

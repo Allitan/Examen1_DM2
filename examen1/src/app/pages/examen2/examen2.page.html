@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>examen2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="ion-padding ion-text-center">
+
+  <h2>Switch</h2>
+
+  <ion-button (click)="changeNamePart()" mode="ios" expand="block" class="ion-margin-bottom">
+    Parte Actual: {{ myNamePart()}} (Click para cambiar)
+  </ion-button>
+
+  <ion-text color="primary" class="switch-output">
+    @switch (myNamePart()) {
+    @case ('Allan') {
+    <p>El nombre **Allan** es mi **primer nombre**</p>
+    }
+    @case ('Humberto') {
+    <p>El nombre **Humberto** es mi **segundo nombre**</p>
+    }
+    @case ('Mendoza') {
+    <p>El apellido **Mendoza** es mi **primer apellido**</p>
+    }
+    @case ('Gomez') {
+    <p>El apellido **Gomez** es mi **segundo apellido**</p>
+    }
+    @default {
+    <p>Parte del nombre no reconocida</p>
+    }
+    }
+  </ion-text>
+</ion-content>

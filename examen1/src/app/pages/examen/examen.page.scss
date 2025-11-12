@@ -1,0 +1,22 @@
+.status-chip {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 25px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.status-green {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.status-orange {
+  background-color: #FF9800;
+  color: white;
+}
+
+.status-red {
+  background-color: #F44336;
+  color: white;
+}

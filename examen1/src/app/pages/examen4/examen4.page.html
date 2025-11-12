@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Signals & Computed Math</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-card class="ion-margin-top">
+    <ion-card-header>
+      <ion-card-title>Resultados (Computed Signals)</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list lines="full">
+
+        <ion-item>
+          <ion-label>
+            <h2>Suma ({{ numPositive() }} + {{ numNegative() }})</h2>
+            <p>Resultado: <strong>{{ sumResult() }}</strong></p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <h2>Resta ({{ numPositive() }} - ({{ numNegative() }}))</h2>
+            <p>Resultado: <strong>{{ subtractResult() }}</strong></p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <h2>Multiplicación ({{ numPositive() }} * {{ numNegative() }})</h2>
+            <p>Resultado: <strong>{{ multiplyResult() }}</strong></p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <h2>División ({{ numPositive() }} / {{ numNegative() }})</h2>
+            <p>Resultado: <strong>{{ divideResult() }}</strong></p>
+          </ion-label>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
