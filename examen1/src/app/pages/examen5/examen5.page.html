@@ -3,11 +3,17 @@
     <ion-title>examen5</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar class="action-sheet-toolbar">
+    <ion-button id="mi-perfil-trigger" expand="block" color="warning" class="profile-button">
+      MI PERFIL
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">examen5</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+
+  <ion-action-sheet header="Seleccione una opción:" trigger="mi-perfil-trigger"
+    [buttons]="actionSheetButtons()"></ion-action-sheet>
+
 </ion-content>
